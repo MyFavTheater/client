@@ -48,7 +48,72 @@
     </div>
 
     <!-- NAVBAR -->
+    <nav id="navbarApp" class="navbar navbar-expand-lg navbar-dark bg-dark" style="display: none;">
+        <a class="navbar-brand" href="#">myFavTheater</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <div class="nav-link" onclick="allEvent()" id="myAllEvent">Event Theater</div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link" onclick="allFavorite()" id="myFavorite">My Favorite</div>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-dark mr-2" data-toggle="modal" data-target="#exampleModal">
+                Edit Profile
+            </button>
+            <button onclick="signOut();" class="btn btn-outline-danger btn-sm fas fa-sign-out-alt" type="submit">
+                Logout</button>
+        </div>
+    </nav>
+    <div id="fb-root"></div>
 
+    <!-- EVENT -->
+    <div class="container" id="cardEvent">
+
+    </div>
+
+    <!-- FAVORITE -->
+    <div class="container" id="cardFavorite">
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Edit Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div id="idProject"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3" id="exampleModalCenterTitle">
+                        <label for="validationServer03">Fullname :</label>
+                        <input type="text" class="form-control" id="fullname" required>
+                    </div>
+                    <div class="mb-3" id="exampleModalCenterTitle">
+                        <label for="validationServer03">Email :</label>
+                        <input type="text" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3" id="exampleModalCenterTitle">
+                        <label for="validationServer03">Password :</label>
+                        <input type="text" class="form-control" id="password" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal"
+                        onclick="editProfile()">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
