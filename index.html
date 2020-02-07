@@ -26,8 +26,8 @@
 
         <div class="content">
             <form action="#" method="post" id="login-box">
-                <input type="text" name="email" placeholder="Email" class="inp" required autofocus><br>
-                <input type="password" name="password" placeholder="Password" class="inp" required><br>
+                <input type="text" id="email" name="email" placeholder="Email" class="inp" required autofocus><br>
+                <input type="password" id="password" name="password" placeholder="Password" class="inp" required><br>
                 <input type="submit" name="submit" value="SIGN IN" id="sub-btn">
             </form>
             <div style="padding: 10px 117px;">
@@ -37,13 +37,17 @@
 
         <div class="other">
             <form action="#" method="post" id="reg-box">
-                <input type="text" name="uname" placeholder="Enter Fullname" class="inp" required autofocus><br>
-                <input type="email" name="email" placeholder="Enter Email" class="inp" required><br>
-                <input type="password" name="pass" placeholder="Enter Password" class="inp" required><br>
+                <input type="text" id="fullnameRegister" name="uname" placeholder="Enter Fullname" class="inp" required
+                    autofocus><br>
+                <input type="email" id="emailRegister" name="email" placeholder="Enter Email" class="inp" required><br>
+                <input type="password" id="passwordRegister" name="pass" placeholder="Enter Password" class="inp"
+                    required><br>
                 <input type="submit" name="submit" value="SIGN UP" id="sub-btn">
             </form>
         </div>
     </div>
+
+    <!-- NAVBAR -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
