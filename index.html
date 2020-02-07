@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="google-signin-client_id"
-        content="227371574673-irnv4lkgpfirc9eeiukjgpok0mt27kcg.apps.googleusercontent.com">
+        content="592667154192-rl0nbr5b63soejgp2bk3rsbpmoknrp4g.apps.googleusercontent.com">
     <link rel="stylesheet" href="./style/style.css">
 
     <title>myFavTheater</title>
@@ -17,6 +17,33 @@
 
 <body>
 
+    <!-- LOGIN & REGISTER -->
+    <div id="main">
+        <div id="tab-btn">
+            <a href="#" class="login active">Sign In</a>
+            <a href="#" class="register">Sign Up</a>
+        </div>
+
+        <div class="content">
+            <form action="#" method="post" id="login-box">
+                <input type="text" name="email" placeholder="Email" class="inp" required autofocus><br>
+                <input type="password" name="password" placeholder="Password" class="inp" required><br>
+                <input type="submit" name="submit" value="SIGN IN" id="sub-btn">
+            </form>
+            <div style="padding: 10px 117px;">
+                <div style="display: flex; margin-left: 40px;" class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+
+        <div class="other">
+            <form action="#" method="post" id="reg-box">
+                <input type="text" name="uname" placeholder="Enter Fullname" class="inp" required autofocus><br>
+                <input type="email" name="email" placeholder="Enter Email" class="inp" required><br>
+                <input type="password" name="pass" placeholder="Enter Password" class="inp" required><br>
+                <input type="submit" name="submit" value="SIGN UP" id="sub-btn">
+            </form>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -28,6 +55,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://kit.fontawesome.com/9c97b4f45c.js" crossorigin="anonymous"></script>
+    <script src="./script/main.js"></script>
 </body>
 
 </html>
