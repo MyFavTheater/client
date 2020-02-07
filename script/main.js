@@ -12,3 +12,4 @@ $(document).ready(function () {
         $(".register").removeClass('active');
     });
 });
+
